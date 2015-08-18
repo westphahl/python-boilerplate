@@ -2,8 +2,9 @@ language: python
 install:
   - pip install pep8 tox
 script:
-  - pep8 .
+  - pep8 boilerplate
   - tox
 env:
   - TOXENV=py27
   - TOXENV=py3
+  - TOXENV=docs
